@@ -1,0 +1,43 @@
+<script>
+    let pegawai = "Ridwan";
+    let jabatan = "Manager";
+    let status = "Menikah";
+
+    if(jabatan == 'Manager'){
+        gajipokok = 15000000;
+    } else if(jabatan == 'Asisten Manager'){
+        gajipokok = 10000000;
+    } else if(jabatan == 'Staff'){
+        gajipokok = 5000000;
+    } else {
+        gajipokok = 0;
+    }
+    let tunjangan = 0.15 * gajipokok;
+    let bpjs = 0.1 * gajipokok;
+    let tuker = (status == 'Menikah') ? 0.2 * gajipokok : 0;
+    let totalgaji = gajipokok + tunjangan + bpjs + tuker;
+    document.write("<h2 align='center'>Tugas 1 JavaScript</h2>")
+    document.write("<table border='1' align='center' cellpadding='10' cellspacing='0' width='50%'>" +
+        "<thead bgcolor='gray'>" +
+        "<tr align='center'>" + 
+            "<th> Nama Pegawai </th>" +
+            "<th> Jabatan </th>" +
+            "<th> Status </th>" +
+            "<th> Gaji Pokok </th>" +
+            "<th> Tunjangan Jabatan </th>" +
+            "<th> BPJS </th>" +
+            "<th> Tunjangan Keluarga </th></tr></thead>")
+    document.write("<tbody><tr>" +
+        "<td align='center'>" + pegawai + "</td>" +
+        "<td align='center'>" + jabatan + "</td>" +
+        "<td align='center'>" + status + "</td>" +
+        "<td align='center'>" + "Rp" + gajipokok + "</td>" +
+        "<td align='center'>" + "Rp" + tunjangan + "</td>" +
+        "<td align='center'>" + "Rp" + bpjs + "</td>" +
+        "<td align='center'>" + "Rp" + tuker + "</td>" +
+        "</tbody>")
+    document.write("<tfoot bgcolor='gray'><tr>" + 
+        "<td colspan='5' align='center'><b> Total Gaji </b></td>" + 
+        "<td colspan='2' align='center'><b> Rp " + totalgaji +
+    "</tfoot>")
+</script>

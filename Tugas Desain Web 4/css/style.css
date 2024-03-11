@@ -1,0 +1,45 @@
+ul, li, a.item:link, a.item:visited, a.item:active {
+    text-decoration: none; /* menghilangkan garis pada link */
+    list-style: square; /* menghilangkan titik pada list */
+    display: block; /* mendisplay a sebagai blok */
+    float: inline-start;/* memposisikan a untuk ke bagian kiri */
+    padding: 3px; /* memberi jarak dan membentuk persegi */
+    background-color: tan; /* mewarnai blok */
+    border-radius: 30px;
+    color: black;
+}
+a.item:hover {
+    background-color: brown;
+}
+fieldset, legend {
+    border-width: 1px;
+    border-color: rgb(28, 37, 28);
+    border-radius: 30px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    padding-left: 40%;
+    background-color: rgb(173, 207, 138);
+}
+legend {
+    padding: 10px;
+    background-color: rgb(78, 235, 64);
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+}
+body {
+    /* background-color: aqua; */
+    background-image: url(../img/bg.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+#left {
+    border-width: 1px;
+    border-color: rgb(64, 196, 64);
+    border-radius: 30px;
+    padding: 17;
+    padding-bottom: 10%;
+    /* padding-top: 0%;
+    padding-left: 0%; */
+    background-color: rgb(83, 79, 81);
+}
